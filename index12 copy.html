@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video de fondo</title>
+    <style>
+      *{
+margin:0;
+
+      }
+      body{
+        background-color: rgb(17, 17, 17);
+      }
+
+.titu {
+  color: rgb(241, 7, 7);
+  font-size: 1.2rem;
+  
+}
+div{
+position: absolute;
+top:50%;
+left:0;
+width: 320px;
+height: 150px;
+
+}
+div h1,h3,h4{
+font-family:  'Arial Narrow Bold', sans-serif;
+  text-align: center;
+  color:white;
+  letter-spacing: 5px;
+}
+h6{
+  margin-left:90px;
+  color:white;
+}
+nav{
+  
+  background-color: black;
+  width: 100vw;
+}
+
+ul li{
+  list-style-type: none;
+  color:white;
+  display:inline-block;
+  margin:0.8rem;
+
+}
+.final{
+margin-left: 30rem;
+ 
+}
+button{
+
+padding:5px;
+}
+button span{
+font-size: 14px;
+
+}
+    video{
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100vw;
+    height: 100vh;
+    z-index:-1;
+    } 
+ 
+
+    </style>
+</head>
+<body><nav>
+
+<ul><li class="titu">NETFLIX</li>
+  <li>inicio</li>
+<li>series</li>
+<li>peliculas</li>
+<li>novedades populares</li>
+<li>Mi lista</li>
+<li class="final">&#x2315;</li>
+<li>Niños</li>
+<li>&#x235d;</li>
+<li>&#x238c;</li>
+<li>&#x25bd;</li>
+</ul>
+>
+  </nav>
+
+  <section>
+  <video id="myVideo" autoplay loop>
+    <source src="https://www.w3schools.com/tags/mov_bbb.mp4" type="video/mp4">
+    <source src="movie.ogg" type="video/ogg">
+    Your browser does not support the video tag.
+  </video>
+  <div>
+  <h6><span style="font-size:20px;color:red;">N</span> PELICULA</h6>
+<h4>LA</h4>
+<h1>MASACRE</h1>
+<h3>DE TEXAS</h3>
+
+ <button onclick="playVid()" ondblclick="pauseVid()" style="margin:20px 5px auto 90px;"><span>&#x25ba;</span> Reproducir</button><button style="color:white;background-color: rgb(102, 101, 101);"><span>&#x2780;</span> Más información</button>
+</div>
+ 
+</section>
+<script> 
+  var vid = document.getElementById("myVideo"); 
+  
+  function playVid() { 
+    vid.play(); 
+  } 
+  
+  function pauseVid() { 
+    vid.pause(); 
+  } 
+  </script> 
+
+</body>
+</html>
