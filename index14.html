@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Degradado de imagen</title>
+    <style>
+      #grad1 {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+        background-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.6),
+          rgba(0, 0, 0, 1)
+        );
+        z-index: -1;
+      }
+      body {
+        background: url("https://www.islabit.com/wp-content/uploads/2020/12/cintas-online.jpg");
+      }
+      .titu {
+        color: hsl(348, 100%, 50%);
+        font-size: 1.6rem;
+        display: inline-block;
+        margin-left: 1.4rem;
+        
+      }
+      .div2{
+
+        width: 33rem;
+        margin: 8.1rem 0 0 25rem;
+
+      }
+      div h1,
+      h4 {
+        font-family: "Arial Narrow Bold", sans-serif;
+        text-align: center;
+        color: white;
+        letter-spacing: 3px;
+      }
+      h6{
+        color:white;
+        letter-spacing: 2px;
+        text-align: center;
+      }
+      input{
+        text-align: center;
+      }
+      .a {
+        background-color: rgba(0, 0, 0, 0.6);
+        margin-left: 60rem;
+        margin-right: .93rem;
+        color: white;
+        border: 1px solid rgba(255,255,255,0.5);
+        /* padding: 4px; */
+      }
+      .b {
+        background-color: red;
+        color: white;
+        padding:4px 8px;
+        border: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="grad1"></div>
+    <p class="titu"><b>NETFLIX</b></p>
+    <button class="a">&#x235d; Español&#x25bd;</button
+    ><button class="b">Iniciar Sesión</button>
+    <div class="div2">
+     
+      <h1>Peliculas y series ilimitadas y mucho más.</h1>
+      <h4>Disfruta dónde quieras.Cancela dónde quieras.</h4>
+      </div>
+      <h6>¿quieres ver Netfly ya? Ingresa tu email para crear una cuenta o reiniciar tu membresia de Netflix</h6>
+      
+
+      <input placeholder="email" style="margin-left:25.6rem;height:1.5rem;width: 25rem;background-color: white;border: 0px;"
+      ></input><button style="color: white; background-color: rgb(255, 7, 7);padding-top: 3.5px;padding-bottom: 7px;border: 0px;">
+         Comenzar<span>&#x2780;</span></button>
+      
+    
+  </body>
+</html>
