@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>una breve media query</title>
+    <style>
+      body {
+        margin: 0;
+        background-color: #0c0c1b;
+      }
+      .container {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .titulo {
+        font-size: 27px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .uno {
+        width: 20.875rem;
+        background-color: #231c3e;
+        color: #dadae2;
+        padding: 2rem 2.5rem;
+      }
+      #unoaa {
+        /**/
+        line-height: 18px;
+        font-size: 0.85rem;
+        color: #848c8c;
+        width: 17rem;
+      }
+
+      .unoa {
+        display: flex;
+        justify-content: space-between;
+        width: 16.4rem;
+        line-height: 2px;
+        margin-top: 2.5rem;
+      }
+      .unoa div > p {
+        color: #848c8c;
+        font-size: 0.8rem;
+      }
+      .dos {
+        background-image: linear-gradient(
+            to bottom,
+            rgba(122, 67, 157, 0.7),
+            rgba(144, 94, 187, 0.8)
+          ),
+          url("https://medios.ucr.ac.cr/medios/fotos/pri_x-large/2019/rs155048_3159-web5c3f5ff5bbd19.jpg");
+        width: 25.875rem;
+        height: 20.514375rem;
+      }
+
+      /* acá va la mediquery */
+
+      @media screen and (max-width: 760px) {
+        .container {
+          height: 100vh;
+          display: flex;
+          flex-direction: column-reverse;
+          justify-content: center;
+          align-items: center;
+        }
+        .uno,
+        .dos {
+          margin-left: auto;
+          margin-right: auto;
+        }
+        .unoa {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+          width: 100%;
+        }
+        .uno {
+          width: 20.875rem;
+          background-color: #231c3e;
+          text-align: center;
+          /* padding: 2.5rem; */
+          font-size: 1.45rem;
+        }
+        #unoaa {
+          /**/
+          line-height: 35px;
+          font-size: 1.5rem;
+          margin-left: auto;
+          margin-right: auto;
+          width: 100%;
+        }
+        .titulo {
+          font-size: 34px;
+          font-weight: bold;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="uno">
+        <p class="titulo">
+          Get <span style="color: #905ebb">insights</span> that help your
+          bussines grow.
+        </p>
+        <div id="unoaa">
+          Discover the benefits of data analytic and make better decisions
+          regarding revenue,customer experience, and overail efficiency.
+        </div>
+
+        <div class="unoa">
+          <div>
+            <h3>10K+</h3>
+            <p>Companzes</p>
+          </div>
+          <div>
+            <h3>314</h3>
+            <p>Templates</p>
+          </div>
+          <div>
+            <h3>12M+</h3>
+            <p>Queries</p>
+          </div>
+        </div>
+      </div>
+      <div class="dos"></div>
+    </div>
+  </body>
+</html>
